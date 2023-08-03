@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./sogno_icon.png" type="image/x-icon">
+    <title>sogno_video</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #bg {
+            background: url(./video_bg.jpg) no-repeat center top;
+            width: 100%;
+            height: 969px;
+            padding-top: 90px;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            width: 1280px;
+            margin: 0px auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #wrapper iframe {
+            width: 1280px;
+            height: 720px;
+        }
+
+        .fixed_box {
+            position: fixed;
+            bottom: 40px;
+            right: 70px;
+            width: 40px;
+        }
+
+        .home_btn,
+        .top_btn {
+            display: inline-block;
+            width: 55px;
+            line-height: 55px;
+            background-color: #a8a08c;
+            text-align: center;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            color: #fff;
+            transition: all 0.5s;
+        }
+
+        .fixed_box a:hover {
+            background-color: #bdaf8c;
+        }
+
+        @media (max-width:1320px) {
+            #wrapper {
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                height: 0;
+                padding-bottom: 56.25%;
+            }
+
+            #wrapper iframe {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg">
+        <div id="wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/uWvsImSq6DU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="fixed_box">
+            <a href="포트폴리오사이트주소" class="home_btn">
+                Home
+            </a>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
